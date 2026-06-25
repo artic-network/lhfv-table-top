@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Document 1</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Inter, Roboto, sans-serif;
+            color: #F2F1E6;
+            background-color: #033940;
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: 40;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color:#E06961}
+        p {
+        }
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }        
+        .info {
+            color: #E6D595;
+            background: #005B68;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 1.0em;
+            font-weight: 300;
+        }
+        .footer {
+            color: #F7EECA;
+            margin-top: 20px;
+            padding: 20px;
+            font-size: 1.0em;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the ARTIC Outbreak Response Exercise</h1>
+    <h2>Can YOU prevent an outbreak becoming the next pandemic?</h2>
+    
+    <div class="info">
+        <p>Disclaimer: The events depicted
+        in this workshop are entirely
+        fictional. Any resemblance to
+        actual persons, living or dead,
+        actual events or outbreaks before
+        or afterwards is definitely entirely
+        coincidental.</p>
+    </div>
+    
+    <div class="footer">
+        <p>Designed and created by: Sam Wilkinson, Áine O'Toole, Emma Hodcroft, Nick Loman and Andrew Rambaut</p>
+        <p><a href="https://artic.network" target="_blank">&copy; 2022-2025, The ARTIC Network</a> | Creative Commons CC-BY 4.0 International License.</p>
+    </div>
+    
+  <p><em>Last updated: <span id="timestamp"></span></em></p>
+    
+    <script>
+        document.getElementById('timestamp').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>

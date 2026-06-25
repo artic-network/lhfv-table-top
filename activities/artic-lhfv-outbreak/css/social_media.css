@@ -1,0 +1,123 @@
+/* bluesky_outbreak.css
+   Simple BlueSky-like feed styling for a mock social chain.
+   Fonts: Inter (loaded from Google Fonts in the HTML).
+*/
+
+:root{
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #0077cc;
+  --border: #e6ecf0;
+  --max-width: 720px;
+  --radius: 12px;
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--font);
+  background:var(--bg);
+  color:#0b1226;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+  display:flex;
+  justify-content:center;
+  padding:36px 16px;
+}
+
+.app{
+  width:100%;
+  max-width:var(--max-width);
+}
+
+/* Header */
+.app-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:12px;
+}
+.brand{
+  font-weight:700;
+  font-size:1.1rem;
+  color:var(--accent);
+}
+.header-note{
+  color:var(--muted);
+  font-size:0.9rem;
+}
+
+/* Feed */
+.feed{display:flex;flex-direction:column;gap:12px}
+
+/* Post / Reply shared */
+.post, .reply{
+  display:flex;
+  gap:12px;
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:12px;
+  border:1px solid var(--border);
+  box-shadow:0 1px 0 rgba(16,24,40,0.02);
+}
+
+/* Replies are slightly indented */
+.replies .reply{margin-left:44px}
+
+/* Avatar */
+.avatar{
+  width:56px;
+  height:56px;
+  border-radius:12px;
+  flex:0 0 56px;
+  object-fit:cover;
+  border:1px solid rgba(0,0,0,0.04);
+}
+
+/* Post body */
+.post-body{flex:1;min-width:0}
+.post-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.display-name{font-weight:700;color:#0b1226}
+.handle{color:var(--muted);font-size:0.92rem}
+.time{color:var(--muted);font-size:0.92rem}
+.dot{color:var(--border);font-weight:700;padding:0 4px}
+
+/* Content */
+.post-content{
+  margin-top:6px;
+  margin-bottom:10px;
+  font-size:1rem;
+  color:#07122a;
+  white-space:pre-wrap;
+  /* ensure long band-name puns wrap nicely */
+  word-break:break-word;
+}
+
+/* Actions (non-functional buttons for look) */
+.post-actions{display:flex;gap:8px}
+.act{
+  background:transparent;
+  border:1px solid var(--border);
+  padding:6px 8px;
+  border-radius:8px;
+  color:var(--muted);
+  cursor:pointer;
+  font-weight:600;
+  font-size:0.95rem;
+}
+.act:hover{background:#f3f7fb;border-color:#d7e8fb;color:var(--accent)}
+
+/* Footer note */
+.app-footer{margin-top:14px;text-align:center;color:var(--muted);font-size:0.9rem}
+
+/* Responsive tweaks */
+@media (max-width:520px){
+  .avatar{width:48px;height:48px;flex:0 0 48px}
+  .replies .reply{margin-left:36px}
+  .post{padding:10px}
+  .post-content{font-size:0.98rem}
+}

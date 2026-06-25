@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Introduction",
+        "description": "Welcome to the ARTIC Outbreak Response Exercise",
+        "day": 0,
+        "url": "documents/00_introduction.html",
+        "notes": "This document provides an overview of the exercise objectives and structure."
+    },
+    {
+        "title": "WHO DON",
+        "description": "Disease Outbreak News — [PLACEHOLDER TITLE]",
+        "day": 1,
+        "url": "documents/01_who_don.html",
+        "notes": "[PLACEHOLDER NOTES]"
+    },
+    {
+        "title": "Vir-Diag-3000-pro",
+        "description": "Results: Vir-Diag-3000-pro Hemorrhagic Fever Syndromic Panel.",
+        "day": 1,
+        "url": "documents/01_vir_diag.html",
+        "notes": "Results from the Vir-Diag-3000-pro panel testing."
+    },   
+    {
+        "title": "Thread on naming novel virus",
+        "description": "Have you seen this social media thread discussing names for the novel virus?",
+        "day": 1,
+        "url": "documents/01_social_media_thread.html",
+        "notes": "A social media thread discussing potential names for the novel virus."
+    },
+    {
+        "title": "Consensus genome sequences",
+        "description": "Initial assemblies of the L and S segmenets of the virus genome.",
+        "day": 2,
+        "url": "documents/02_consensus_genome.html",
+        "notes": "The initial consensus genomes for the two segments."
+    }   
+]

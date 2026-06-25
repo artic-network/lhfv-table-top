@@ -1,0 +1,183 @@
+/* WHO_DON.css
+   A standalone stylesheet to approximate the styling of a WHO Disease Outbreak News bulletin.
+   Replace placeholder text and images with real content as needed.
+*/
+
+:root{
+  --who-blue: #005EB8;
+  --muted: #6b6b6b;
+  --bg: #f3f6f8;
+  --card-bg: #ffffff;
+  --max-width: 980px;
+  --radius: 4px;
+  --accent: #0074d9;
+  --text: #222;
+  --container-padding: 24px;
+  --font-sans: "Noto Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-sans);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  font-size:16px;
+}
+
+/* Header */
+.site-header{
+  background:linear-gradient(90deg,var(--who-blue), #0a66c2);
+  color:#fff;
+  padding:12px 0;
+}
+.header-inner{
+  max-width:var(--max-width);
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 var(--container-padding);
+}
+.who-mark{display:flex;align-items:center;gap:12px}
+.emblem{
+  width:56px;height:56px;border-radius:50%;
+  background:rgba(255,255,255);
+  border:2px solid #008ECD; 
+  flex:0 0 56px;
+}
+.site-title .who{font-weight:700;letter-spacing:0.4px}
+.site-title .site-name{font-weight:300;font-size:0.9rem;opacity:0.95}
+
+.top-nav .nav-link{
+  color:rgba(255,255,255,0.95);
+  text-decoration:none;
+  margin-left:16px;
+  font-weight:600;
+  font-size:0.95rem;
+}
+
+/* Main container */
+.container{
+  max-width:var(--max-width);
+  margin:24px auto;
+  padding:0 var(--container-padding);
+}
+
+/* Breadcrumb */
+.breadcrumb{
+  font-size:0.9rem;
+  color:var(--muted);
+  margin-bottom:10px;
+}
+.breadcrumb a{color:var(--muted);text-decoration:none}
+
+/* Article card */
+.don-article{
+  background:var(--card-bg);
+  border-radius:var(--radius);
+  box-shadow:0 2px 6px rgba(18,35,43,0.06);
+  padding:28px;
+  overflow:hidden;
+}
+
+/* Eyebrow label */
+.eyebrow{
+  display:inline-block;
+  background:#e6f0ff;
+  color:var(--who-blue);
+  font-weight:700;
+  padding:6px 10px;
+  border-radius:16px;
+  font-size:0.85rem;
+  margin-bottom:12px;
+}
+
+/* Title and meta */
+.article-header .title{
+  margin:8px 0 8px;
+  font-size:1.8rem;
+  line-height:1.15;
+  font-weight:700;
+  color:#0b2b4a;
+}
+.meta{
+  color:var(--muted);
+  font-size:0.95rem;
+  margin-bottom:16px;
+}
+.meta-item{margin-right:8px}
+.meta-sep{color:rgba(0,0,0,0.08);padding:0 6px}
+
+/* Hero media placeholder */
+.hero-media{margin:16px 0}
+.media-placeholder{
+  background:linear-gradient(90deg,#e9eef6,#f5f7fb);
+  border:1px solid #e1e6ef;
+  border-radius:6px;
+  height:220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--muted);
+  font-weight:600;
+}
+
+/* Lede */
+.lede .lead{
+  font-size:1.05rem;
+  font-weight:500;
+  margin-bottom:18px;
+  color:#153a5a;
+}
+
+/* Sections */
+.section{margin:20px 0}
+.section h2{
+  font-size:1.15rem;
+  margin:0 0 8px;
+  color:#0b3b66;
+  border-left:4px solid var(--who-blue);
+  padding-left:10px;
+  font-weight:700;
+}
+.section p{margin:0 0 12px;color:#2b3f54}
+.section ul, .section ol{margin:8px 0 12px 1.1rem;color:#2b3f54}
+.section li{margin:6px 0}
+
+/* Article footer */
+.article-footer{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  margin-top:24px;
+  border-top:1px solid #eef3f7;
+  padding-top:16px;
+}
+.contact-card h3{margin:0 0 6px;font-size:1rem;color:#0b3b66}
+.contact-card p{margin:4px 0;color:var(--muted)}
+
+.share{margin-left:auto;text-align:right}
+.share-buttons{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}
+.share-btn{
+  background:#f1f5fb;border:1px solid #dbe9ff;padding:6px 10px;border-radius:4px;
+  color:var(--who-blue);text-decoration:none;font-weight:700;font-size:0.9rem;
+}
+
+/* Footer */
+.site-footer{margin-top:24px;padding:16px 0;background:transparent}
+.footer-inner{max-width:var(--max-width);margin:0 auto;padding:0 var(--container-padding);color:var(--muted);font-size:0.95rem}
+
+/* Responsive */
+@media (max-width:720px){
+  .header-inner{padding:0 16px}
+  .container{padding:0 16px}
+  .article-header .title{font-size:1.4rem}
+  .hero-media .media-placeholder{height:160px}
+  .article-footer{flex-direction:column;align-items:stretch}
+  .share{margin-left:0;text-align:left}
+}
