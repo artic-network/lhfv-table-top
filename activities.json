@@ -1,8 +1,0 @@
-{
-  "defaultActivity": "artic-lhfv-outbreak",
-  "activities": {
-    "artic-lhfv-outbreak": {
-      "baseUrl": "activities/artic-lhfv-outbreak/"
-    }
-  }
-}
