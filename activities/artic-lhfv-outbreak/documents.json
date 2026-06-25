@@ -34,7 +34,6 @@
         "title": "Consensus genome sequences #1",
         "description": "Initial assemblies of the L and S segmenets of the virus genome.",
         "day": 2,
-        "autoDeploy": false,
         "url": "documents/02_consensus_genome.html",
         "notes": "The initial consensus genomes for the two segments."
     },
@@ -42,7 +41,6 @@
         "title": "Consensus genome sequences #2",
         "description": "Initial assemblies of the L and S segmenets of the virus genome.",
         "day": 2,
-        "autoDeploy": false,
         "url": "documents/03_consensus_genome.html",
         "notes": "Some other consensus genomes for the two segments."
     }   
