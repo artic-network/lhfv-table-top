@@ -10,6 +10,7 @@
         "title": "WHO DON",
         "description": "Disease Outbreak News — [PLACEHOLDER TITLE]",
         "day": 1,
+        "autoDeploy": true,
         "url": "documents/01_who_don.html",
         "notes": "[PLACEHOLDER NOTES]"
     },
@@ -17,6 +18,7 @@
         "title": "Vir-Diag-3000-pro",
         "description": "Results: Vir-Diag-3000-pro Hemorrhagic Fever Syndromic Panel.",
         "day": 1,
+        "autoDeploy": true,
         "url": "documents/01_vir_diag.html",
         "notes": "Results from the Vir-Diag-3000-pro panel testing."
     },   
@@ -24,14 +26,24 @@
         "title": "Thread on naming novel virus",
         "description": "Have you seen this social media thread discussing names for the novel virus?",
         "day": 1,
+        "autoDeploy": true,
         "url": "documents/01_social_media_thread.html",
         "notes": "A social media thread discussing potential names for the novel virus."
     },
     {
-        "title": "Consensus genome sequences",
+        "title": "Consensus genome sequences #1",
         "description": "Initial assemblies of the L and S segmenets of the virus genome.",
         "day": 2,
+        "autoDeploy": false,
         "url": "documents/02_consensus_genome.html",
         "notes": "The initial consensus genomes for the two segments."
+    },
+    {        
+        "title": "Consensus genome sequences #2",
+        "description": "Initial assemblies of the L and S segmenets of the virus genome.",
+        "day": 2,
+        "autoDeploy": false,
+        "url": "documents/03_consensus_genome.html",
+        "notes": "Some other consensus genomes for the two segments."
     }   
 ]
