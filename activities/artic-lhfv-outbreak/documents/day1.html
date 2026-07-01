@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Disease Outbreak News — LHFV in Articia</title>
+  <script src="../../js/setup.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/WHO_DON.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="who-mark">
+        <img class="emblem" src="../assets/who_logo.svg" alt="WHO emblem" />
+        <div class="site-title">
+          <div class="who">Articia centre for disease control</div>
+          <div class="site-name">Disease Outbreak News</div>
+        </div>
+      </div>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Emergencies</a>
+        <a href="#" class="nav-link">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="#">Home</a> › <a href="#">Emergencies</a> › <a href="#">Disease Outbreak News</a>
+    </nav>
+
+    <article class="don-article" aria-labelledby="don-title">
+      <div class="eyebrow">Disease Outbreak News</div>
+
+      <header class="article-header">
+        <h1 id="don-title" class="title">LHFV in Articia</h1>
+
+        <div class="meta">
+          <span class="meta-item date">Date: 1st July 2026</span>
+          <span class="meta-item location">Location: Articia</span>
+        </div>
+
+        <div class="hero-media" role="img" aria-label="Placeholder image">
+          <div img="media-placeholder" src="../data/articia_map.png" >
+          <!-- <img src="../data/articia_map.png" alt="WHO emblem" /> -->
+        </div>
+      </header>
+
+      <section class="lede">
+        <p class="lead">The national laboratories have sent you sequences of the initial cases, and your collaborators have also provided you with the historic sequences.</p>
+      </section>
+
+     <section class="section" id="data">
+        <h2>Data</h2>
+        <ul>
+        <div style="text-wrap: none;">
+          <a class="btn" href="../data/data1.plusUTRs.csv" target="_blank" rel="noopener"><div>Metadata</div><div>(new&nbsp;tab)</div></a>
+        </div>
+        <div style="text-wrap: none;">
+          <a class="btn" href="../data/data1.plusUTRs.fasta" target="_blank" rel="noopener"><div>Unaligned sequences</div><div>(new&nbsp;tab)</div></a>
+        </div>
+        </ul>
+      </section>
+
+
+      <footer class="article-footer">
+        <div class="contact-card">
+          <h3>For more information</h3>
+          <p>Email: <a href="mailto:outbreaks@who.int">outbreaks@who.int</a></p>
+          <p>WHO Emergency Email: <a href="mailto:emergencies@who.int">emergencies@who.int</a></p>
+        </div>
+
+        <div class="share">
+          <strong>Share</strong>
+          <div class="share-buttons">
+            <a href="#" class="share-btn">Twitter</a>
+            <a href="#" class="share-btn">Facebook</a>
+            <a href="#" class="share-btn">LinkedIn</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <p>This is part of a fictional scenario. Any resemblance to real persons, living or dead, or actual outbreaks, past or future, is definitely entirely coincidental.</p>
+    </div>
+  </footer>
+
+  <script>
+    setup();
+  </script>
+
+</body>
+</html>
